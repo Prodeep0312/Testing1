@@ -1,0 +1,33 @@
+
+Test Specifications for String Calculator 
+
+1) Given : ""
+Then :Result = 0 
+
+2)Given :"0"
+Then : Result = 0
+
+3)Given :"1"
+Then  :Result= 1
+
+4)Given :"1,2"
+Then : Result = 3
+
+5)Given :"1\n2,3"
+Then :Result = 6
+
+6)Given :"1,\n"
+Then: Result = InvalidParameterException("Input String is Not in Proper Format")
+
+7)Given:"-2"
+Then : Result = InvalidParameterException("Negatives are not allowed")
+
+
+8)Given :"2,1001"
+Then:Result= 2
+
+9)Given :"//[***]\n1***2***3"
+Then :Result= 6
+
+10)Given "//[*][%]\n1*2%3"
+Then :Result = 6
